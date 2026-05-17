@@ -1,0 +1,11 @@
+{
+  "name": "Mood Tracker",
+  "short_name": "Mood Tracker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#6366F1",
+  "description": "A small daily mood check-in.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
