@@ -47,14 +47,13 @@ firebase deploy --only hosting
 
 ### Vercel
 
-Vercel doesn't have Flutter on its build image, so I build locally and let Vercel just serve the static output.
+Vercel doesn't ship Flutter on its default build image, so build locally and let Vercel serve the static output.
 
 ```bash
 flutter build web --release
-npx vercel deploy --prod
+cd build/web
+npx vercel --prod
 ```
-
-`vercel.json` points `outputDirectory` at `build/web` and adds the SPA rewrite.
 
 ## How it works
 
