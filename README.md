@@ -36,17 +36,6 @@ Output: `build/web`.
 
 ## Deploying
 
-### Firebase
-
-```bash
-flutter build web --release
-firebase deploy --only hosting
-```
-
-`firebase.json` already has the public dir, SPA rewrites and cache headers. First time: `firebase login` then `firebase init hosting` against an existing project.
-
-### Vercel
-
 Vercel doesn't ship Flutter on its default build image, so build locally and let Vercel serve the static output.
 
 ```bash

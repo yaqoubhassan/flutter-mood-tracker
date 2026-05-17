@@ -9,8 +9,6 @@ build/
 .vscode/
 *.iml
 .DS_Store
-.firebase/
-.firebaserc
 .vercel/
 node_modules/
 
