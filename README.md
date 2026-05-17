@@ -3,7 +3,7 @@
 Flutter web app. One screen, tap a face to log your mood, see the last 7 entries in a horizontal timeline, tap any past entry to replay a bounce animation. Faces are drawn with `CustomPainter` (no emoji, no icons, no images).
 
 ## Live demo
-_TODO: paste deployed URL_
+https://flutter-mood-tracker.vercel.app
 
 ## Features
 
