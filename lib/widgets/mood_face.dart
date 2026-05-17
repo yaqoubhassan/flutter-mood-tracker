@@ -8,7 +8,6 @@ class MoodFace extends StatelessWidget {
   final double size;
   final double strokeWidth;
   final bool filled;
-  final Color? colorOverride;
 
   const MoodFace({
     super.key,
@@ -16,7 +15,6 @@ class MoodFace extends StatelessWidget {
     this.size = 96,
     this.strokeWidth = 4.0,
     this.filled = true,
-    this.colorOverride,
   });
 
   @override
@@ -27,7 +25,7 @@ class MoodFace extends StatelessWidget {
       child: CustomPaint(
         painter: MoodFacePainter(
           mood: mood,
-          color: colorOverride ?? mood.accentColor,
+          color: mood.accentColor,
           strokeWidth: strokeWidth,
           filled: filled,
         ),
